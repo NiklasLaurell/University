@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.io.*;
+import java.util.*;
+
+public class Main{
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		int len = 6;
+		int antal = 4;
+		egetSpel game = new egetSpel(len, antal);
+		game.createDeck();
+		System.out.println("Tal att gissa på" + ":" + Arrays.toString(game.getDeck()));
+		System.out.println("Antal kvar av talet" + ":" + Arrays.toString(game.getQuan()));
+		//while(true)
+		game.gameLoop();
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+}
+	

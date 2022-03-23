@@ -1,0 +1,14 @@
+import se.lth.cs.pt.window.SimpleWindow;
+
+public class Mole {
+	int width = 50;
+	int height = 100;
+	int bs = 10;
+	public Graphics g = new Graphics(width, height, bs);
+	public static void main(String[] args){
+		g.rectangle(0, 0, 1, 1, Colors.SOIL);	
+		
+	}
+
+}
+

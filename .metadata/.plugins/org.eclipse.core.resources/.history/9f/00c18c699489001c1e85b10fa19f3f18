@@ -1,0 +1,25 @@
+import se.lth.cs.pt.window.SimpleWindow;
+
+public class Mole {
+	public static void main(String[] args){
+		Graphics g = new Graphics(20, 100, 10);
+		 
+		g.block(4*i, 4, Colors.SOIL);
+		
+		private void dig(){
+			int x = g.getWidth()/2;
+			int y = g.getHeight()/2;
+			while(true) {
+				g.block(x, y, Colors.MOLE);
+				char key = g.waitForKey();
+				if (key == 'w') { g.block(x, -y, Colors.SOIL) }
+				else if (key == 'a') { g.block(-x, y, Colors.SOIL) }
+				else if (key == 's') { g.block(x, y, Colors.SOIL) }
+				else if (key == 'd') { g.block(x, y, Colors.SOIL) }
+
+			}
+		}
+			
+	}
+}
+

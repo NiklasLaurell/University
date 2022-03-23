@@ -1,0 +1,14 @@
+import se.lth.cs.pt.window.SimpleWindow;
+
+public class Mole {
+	public static void main(String[] args){
+		Graphics g = new Graphics(20, 100, 10);
+		g.square();
+		g.block(4, 4);
+		g.block(6, 6);
+		g.block(8, 8);
+		
+			
+	}
+}
+

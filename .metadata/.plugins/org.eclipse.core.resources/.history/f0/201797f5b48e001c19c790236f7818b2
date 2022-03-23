@@ -1,0 +1,27 @@
+import java.util.Scanner;
+import java.io.*;
+import java.util.*;
+
+public class Main{
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		int len = 6;
+		int antal = 4;
+		egetSpel game = new egetSpel(len, antal);
+		game.createDeck();
+		while(true) {
+			game.uppdateDeck(game.randomInt());
+			System.out.println(Arrays.toString(game.getDeck()));
+			System.out.println(Arrays.toString(game.getQuan()));
+			
+		}
+		
+		
+		
+		
+	}
+
+	
+	
+}
+	

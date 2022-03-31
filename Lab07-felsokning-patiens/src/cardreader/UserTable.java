@@ -39,7 +39,9 @@ public class UserTable {
 			name = name.trim(); // städa bort inledande mellanslag
 			User u = new User(nbr, name);
 			add(u);
+			n++;
 		}
+		
 		System.out.println("Klar med inläsning av användardata.");
 	}
 
@@ -79,7 +81,7 @@ public class UserTable {
 		int low = 0;
 		int high = n - 1;
 		int mid = -1;
-		while (low < high) {
+		while (low <= high) {
 			mid = (low + high) / 2;
 			if (users[mid].getCardNbr() == cardNbr) {
 				return users[mid];
@@ -121,9 +123,7 @@ public class UserTable {
 		for (int i = 0; i < n; i++) {
 			if (users[i].getName().equals(name)) {
 				return users[i];
-			} else {
-				return null;
-			}
+			} 
 		}
 		
 		return null;
